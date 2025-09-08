@@ -5,89 +5,170 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ojasvi Bharadwaj — Portfolio</title>
   <style>
+    /* ---------- Global Styles ---------- */
     body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background: #f4f6f8;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f9;
       color: #333;
       line-height: 1.6;
     }
+    a { text-decoration: none; color: #0077cc; }
+    a:hover { text-decoration: underline; }
+
+    /* ---------- Header ---------- */
     header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
       text-align: center;
-      margin-bottom: 30px;
+      padding: 60px 20px;
     }
     header h1 {
       margin: 0;
-      color: #2c3e50;
+      font-size: 42px;
+      font-weight: 700;
     }
     header p {
-      color: #555;
+      margin-top: 10px;
+      font-size: 18px;
+      color: #dfe6f0;
     }
+
+    /* ---------- Section ---------- */
     section {
-      margin-bottom: 30px;
-      background: #fff;
+      max-width: 1000px;
+      margin: 40px auto;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     h2 {
-      margin-top: 0;
+      font-size: 26px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 8px;
       color: #2c3e50;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+
+    /* ---------- Summary Card ---------- */
+    .summary {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      font-size: 16px;
     }
-    li {
-      margin: 8px 0;
+    .summary p {
+      margin-bottom: 15px;
     }
-    a {
-      color: #1e90ff;
-      text-decoration: none;
+
+    /* ---------- Portfolio Grid ---------- */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
-    a:hover {
-      text-decoration: underline;
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #0077cc;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* ---------- Footer ---------- */
     footer {
       text-align: center;
+      padding: 20px;
+      background: #1e3c72;
+      color: #fff;
       margin-top: 40px;
       font-size: 14px;
-      color: #777;
     }
   </style>
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <h1>Ojasvi Bharadwaj</h1>
-    <p>Content Writer • Sports Analyst • Research-Driven</p>
+    <p>Content Writer • Sports Analyst • Research-Driven & Versatile</p>
   </header>
 
+  <!-- Summary -->
   <section>
     <h2>Professional Summary</h2>
-    <p>I have contributed extensively to <strong>SportsDunia</strong>, where my portfolio showcases a diverse range of articles—from comprehensive player and team analyses to engaging listicles, player rankings, and in-depth league predictions with detailed team-by-team breakdowns. My strong research skills allow me to craft well-informed, data-driven content that balances depth with readability.</p>
-    <p>Beyond sports, I bring versatility and adaptability as a writer, with the ability to create compelling content across multiple domains including <strong>automotive</strong>, <strong>WWE</strong>, <strong>cricket</strong>, <strong>technology</strong>, and <strong>news</strong>.</p>
+    <div class="summary">
+      <p>I have contributed extensively to <strong>SportsDunia</strong>, where my portfolio showcases a diverse range of articles—from comprehensive player and team analyses to engaging listicles, player rankings, and in-depth league predictions with detailed team-by-team breakdowns. My strong research skills allow me to craft well-informed, data-driven content that balances depth with readability.</p>
+      <p>Beyond sports, I bring versatility and adaptability as a writer, with the ability to create compelling content across multiple domains including <strong>automotive</strong>, <strong>WWE</strong>, <strong>cricket</strong>, <strong>technology</strong>, and <strong>news</strong>. I approach every piece with precision, creativity, and a focus on engaging the reader.</p>
+    </div>
   </section>
 
+  <!-- Portfolio -->
   <section>
-    <h2>Portfolio — Selected Work</h2>
-    <ul>
-      <li><a href="https://www.sportsdunia.com/football-players/oleksandr-zinchenko" target="_blank">Oleksandr Zinchenko — Player Overview</a></li>
-      <li><a href="https://www.sportsdunia.com/football-teams/manchester-city" target="_blank">Manchester City — Team Overview</a></li>
-      <li><a href="https://www.sportsdunia.com/football-players/gerard-moreno" target="_blank">Gerard Moreno — Player Overview</a></li>
-      <li><a href="https://www.sportsdunia.com/football-teams/liverpool" target="_blank">Liverpool — Team Overview</a></li>
-      <li><a href="https://www.sportsdunia.com/football-teams/west-ham-united" target="_blank">West Ham United — Team Overview</a></li>
-      <li><a href="https://www.sportsdunia.com/football-players/andrew-robertson" target="_blank">Andrew Robertson — Player Overview</a></li>
-      <li><a href="https://www.sportsdunia.com/football-players/elliot-anderson" target="_blank">Elliot Anderson — Player Overview</a></li>
-      <li><a href="https://www.sportsdunia.com/football-players/antonio-rudiger" target="_blank">Antonio Rüdiger — Player Overview</a></li>
-      <li><a href="https://www.sportsdunia.com/football-stats/crystal-palace-stats" target="_blank">Crystal Palace — Stats Hub</a></li>
-      <li><a href="https://www.sportsdunia.com/football-stats/nottingham-forest-stats" target="_blank">Nottingham Forest — Stats Hub</a></li>
-      <li><a href="https://www.sportsdunia.com/football-stats/chelsea-stats" target="_blank">Chelsea — Stats Hub</a></li>
-    </ul>
+    <h2>Selected Work</h2>
+    <div class="portfolio-grid">
+      <div class="card">
+        <h3><a href="https://www.sportsdunia.com/football-players/oleksandr-zinchenko" target="_blank">Oleksandr Zinchenko</a></h3>
+        <p>Comprehensive player profile and analysis.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.sportsdunia.com/football-teams/manchester-city" target="_blank">Manchester City</a></h3>
+        <p>Team overview and tactical insights.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.sportsdunia.com/football-players/gerard-moreno" target="_blank">Gerard Moreno</a></h3>
+        <p>Player statistics and career highlights.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.sportsdunia.com/football-teams/liverpool" target="_blank">Liverpool</a></h3>
+        <p>Team breakdown and season outlook.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.sportsdunia.com/football-teams/west-ham-united" target="_blank">West Ham United</a></h3>
+        <p>Squad analysis and fixtures preview.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.sportsdunia.com/football-players/andrew-robertson" target="_blank">Andrew Robertson</a></h3>
+        <p>Defensive contributions and role in the team.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.sportsdunia.com/football-players/elliot-anderson" target="_blank">Elliot Anderson</a></h3>
+        <p>Young talent profile and future potential.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.sportsdunia.com/football-players/antonio-rudiger" target="_blank">Antonio Rüdiger</a></h3>
+        <p>Defensive strengths and tactical fit.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.sportsdunia.com/football-stats/crystal-palace-stats" target="_blank">Crystal Palace Stats</a></h3>
+        <p>Detailed statistical breakdown.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.sportsdunia.com/football-stats/nottingham-forest-stats" target="_blank">Nottingham Forest Stats</a></h3>
+        <p>Performance and match data.</p>
+      </div>
+      <div class="card">
+        <h3><a href="https://www.sportsdunia.com/football-stats/chelsea-stats" target="_blank">Chelsea Stats</a></h3>
+        <p>Team metrics and season insights.</p>
+      </div>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    © <script>document.write(new Date().getFullYear());</script> Ojasvi Bharadwaj
+    © <script>document.write(new Date().getFullYear());</script> Ojasvi Bharadwaj — Portfolio
   </footer>
 
 </body>
